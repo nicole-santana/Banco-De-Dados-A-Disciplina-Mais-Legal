@@ -1,0 +1,33 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "NICOLE",
+            "group": "nick",
+            "database": "Banco-De-Dados-A-Disciplina-Mais-Legal",
+            "username": "nicole-santana"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "nick",
+            "group": "nick",
+            "database": "Banco-De-Dados-A-Disciplina-Mais-Legal",
+            "username": "nick",
+            "password": ""
+        }
+    ]
+}
