@@ -1,5 +1,5 @@
 -- Exercícios da lista
 
--- ex9
+-- ex 10
 
-select produto, SUM(receita) as receita_total from vendas group by produto having receita_total >'10.000';
+select nome, count(titulo) as n°_de_livros from autores inner join livros where autores.id = livros.autor_id group by nome having n°_de_livros >2;
