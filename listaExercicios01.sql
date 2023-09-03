@@ -1,5 +1,6 @@
 -- Exercícios da lista:
 
--- Ex2:
 
-select autores.nome from aula_db_exemplos.autores where autores.nascimento < '1901-01-01';
+-- Ex3
+
+select livros.titulo from aula_db_exemplos.livros where livros.autor_id = 1;
