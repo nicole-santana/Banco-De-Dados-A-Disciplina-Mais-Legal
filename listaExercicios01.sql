@@ -1,5 +1,5 @@
 -- Exercícios da lista
 
--- ex5
+-- ex6
 
-select produto, SUM(receita) as Receita_total from vendas group by produto;
+select nome, COUNT(titulo) as n°_de_livros from autores inner join livros where autores.id = livros.autor_id group by nome;
