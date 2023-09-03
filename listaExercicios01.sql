@@ -1,5 +1,5 @@
 -- Exercícios da lista
 
--- ex6
+-- ex7
 
-select nome, COUNT(titulo) as n°_de_livros from autores inner join livros where autores.id = livros.autor_id group by nome;
+select curso, count(nome) as n°_de_alunos from matriculas inner join alunos on matriculas.aluno_id=alunos.id group by curso;
