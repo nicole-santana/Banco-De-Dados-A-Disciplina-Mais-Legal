@@ -1,5 +1,5 @@
 -- Exercícios da lista
 
--- ex 12
+-- ex 13
 
-select nome, curso from alunos inner join matriculas on alunos.id = matriculas.aluno_id; 
+select nome, titulo from autores left join livros on autores.id = livros.autor_id;
