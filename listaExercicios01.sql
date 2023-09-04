@@ -1,6 +1,7 @@
 -- Exercícios da lista
 
--- ex 14
+-- ex 15
 
-select curso, nome from alunos right join matriculas on alunos.id = matriculas.aluno_id;
+select nome, curso from alunos inner join matriculas on alunos.id = matriculas.aluno_id; 
 
+-- é a mesma resposta do ex12(?)
