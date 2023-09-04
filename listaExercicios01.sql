@@ -1,7 +1,17 @@
 -- Exercícios da lista
 
--- ex 15
+-- ex 16
 
-select nome, curso from alunos inner join matriculas on alunos.id = matriculas.aluno_id; 
+with contagemlivros as (
+    select autor_id, count(*) as quantidadelivros
+    from livros
+    group by autor_id
+)
 
--- é a mesma resposta do ex12(?)
+select autores.nome as autor, quantidadelivros as maiorquantidadelivros
+from contagemlivros
+join autores on contagemlivros.autor_id = autores.id
+where quantidadelivros = (
+    select max(quantidadelivros) 
+    from contagemlivros
+);
