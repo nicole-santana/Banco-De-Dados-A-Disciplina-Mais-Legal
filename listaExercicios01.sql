@@ -1,17 +1,5 @@
 -- Exercícios da lista
 
--- ex 16
+-- ex 17
 
-with contagemlivros as (
-    select autor_id, count(*) as quantidadelivros
-    from livros
-    group by autor_id
-)
-
-select autores.nome as autor, quantidadelivros as maiorquantidadelivros
-from contagemlivros
-join autores on contagemlivros.autor_id = autores.id
-where quantidadelivros = (
-    select max(quantidadelivros) 
-    from contagemlivros
-);
+select produto, sum(receita) as receita_total from vendas group by produto order by receita_total asc limit 1;
